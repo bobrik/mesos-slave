@@ -55,4 +55,4 @@ do
         [ $SUBSYS = cpuacct,cpu ] && ln -s $SUBSYS $CGROUP/cpu,cpuacct
 done
 
-mesos-slave $@
+exec mesos-slave $@
